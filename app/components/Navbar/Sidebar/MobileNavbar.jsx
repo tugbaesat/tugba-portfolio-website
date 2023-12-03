@@ -28,12 +28,12 @@ const MobileNavbar = ({ navLinks }) => {
 
   return (
     <motion.div
-      className="md:hidden flex flex-col items-center justify-center bg-[#E6F4FC] dark:bg-[#11435E] text-[#868686] dark:text-[#ABABAB]"
+      className="md:hidden flex flex-col items-center justify-center bg-[#dccccc] dark:bg-[#002A2E] text-[#494949] dark:text-[#868686]"
       animate={open ? "open" : "closed"}
     >
       <motion.div
         variants={variants}
-        className=" z-10 fixed top-0 left-0 bottom-0 right-0 w-1/2 bg-white"
+        className=" z-10 fixed top-0 left-0 bottom-0 right-0 w-1/2 bg-[#dccccc] dark:bg-[#002A2E]"
       >
         <MobileNavLink navLinks={navLinks} />
       </motion.div>

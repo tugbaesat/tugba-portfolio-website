@@ -9,7 +9,7 @@ const navLinks = [
   {
     title: "Home",
     id: 1,
-    path: "/",
+    path: "/#home",
   },
   {
     title: "About",
@@ -26,18 +26,19 @@ const navLinks = [
     id: 4,
     path: "/#contact",
   },
-  {
-    title: "All Projects",
-    id: 5,
-    path: "/projects",
-  },
+  // {
+  //   title: "All Projects",
+  //   id: 5,
+  //   path: "/projects",
+  // },
 ];
 
 const Navbar = () => {
   return (
     <nav className="fixed top-0 right-0 left-0 flex md:items-center justify-between">
       <MobileNavbar navLinks={navLinks} />
-      <motion.div className="p-6"
+      <motion.div
+        className="p-6"
         initial={{ opacity: 0, scale: 0.5 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.7 }}
