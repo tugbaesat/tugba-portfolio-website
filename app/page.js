@@ -8,7 +8,7 @@ export default function Home() {
         <Navbar />
         <HeroSection />
       </section>
-      <section id="about">Parallax Section</section>
+      <section id="about"></section>
       <section>About Section</section>
       <section id="portfolio">Parallax Section</section>
       <section>Portfolio Section1</section>
