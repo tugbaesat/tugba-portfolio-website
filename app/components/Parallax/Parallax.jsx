@@ -1,9 +1,14 @@
-import React from 'react'
+import React from "react";
 
-const Parallax = () => {
+const Parallax = ({ type }) => {
   return (
-    <div>Parallax</div>
-  )
-}
+    <div className="">
+      <h1>{type === "about" ? "Who Am I?" : "What I Did?"}</h1>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  );
+};
 
-export default Parallax
+export default Parallax;
