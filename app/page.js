@@ -2,7 +2,6 @@ import About from "./components/About/About";
 import HeroSection from "./components/Hero/HeroSection";
 import Navbar from "./components/Navbar/Navbar";
 import Parallax from "./components/Parallax/Parallax";
-
 export default function Home() {
   return (
     <main className="bg-[#f1eaea] dark:bg-[#001b1d]">
@@ -14,12 +13,15 @@ export default function Home() {
         <Parallax type="about" />
       </section>
       <section>
-        <About/>
+        <About />
       </section>
       <section id="portfolio">
         <Parallax type="portfolio" />
       </section>
-      <section>Portfolio Section1</section>
+      <section>
+        {" "}
+       
+      </section>
       <section>Portfolio Section2</section>
       <section>Portfolio Section3</section>
       <section id="contact">Contact Section</section>

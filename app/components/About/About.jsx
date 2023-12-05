@@ -3,6 +3,8 @@ import React, { useRef } from "react";
 import Image from "next/image";
 import pc from "../../../public/pc.jpeg";
 import { motion, useInView } from "framer-motion";
+import ParallaxText from "./SkillsParallax";
+
 const About = () => {
   const variants = {
     initial: {
@@ -33,7 +35,10 @@ const About = () => {
       //   whileInView="animate"
       className=" h-screen bg-gradient-to-b to-[#dccccc] from-[#f1eaea]  dark:from-[#001b1d] dark:to-[#002f32] overflow-hidden flex flex-col justify-center items-center text-center gap-10"
     >
-      <motion.div variants={variants} className="flex items-center justify-center gap-6">
+      <motion.div
+        variants={variants}
+        className="flex items-center justify-center gap-6"
+      >
         <Image
           src={pc}
           alt="old computer image"
@@ -63,6 +68,10 @@ const About = () => {
         bring a systematic and analytical approach to development, rooted in my
         engineering foundation.
       </p>
+      <div>
+        <ParallaxText baseVelocity={-5}>Frontend Developer</ParallaxText>
+        <ParallaxText baseVelocity={5}>Frontend Developer</ParallaxText>
+      </div>
     </motion.div>
   );
 };
