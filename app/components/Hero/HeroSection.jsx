@@ -70,10 +70,7 @@ const HeroSection = () => {
             variants={textVariants}
             className="w-full items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden font-medium rounded-full group bg-gradient-to-br from-[#F8A000] dark:from-[#F0BE47] to-[#FFC500] dark:to-[#FFE182] text-[#f1eaea]  dark:text-[#001b1d]"
           >
-            <motion.span
-              variants={textVariants}
-              className="block px-5 py-3 transition-all duration-75 ease-in bg-[#FFE182] bg-opacity-0 rounded-full group-hover:bg-opacity-40"
-            >
+            <motion.span className="block px-5 py-3 transition-all duration-75 ease-in bg-[#FFE182] bg-opacity-0 rounded-full group-hover:bg-opacity-40">
               See My Latest Works
             </motion.span>
           </motion.button>
@@ -81,10 +78,7 @@ const HeroSection = () => {
             variants={textVariants}
             className="w-full items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden font-medium rounded-full group bg-gradient-to-br from-[#F8A000] dark:from-[#F0BE47] to-[#FFC500] dark:to-[#FFE182] text-[#f1eaea]  dark:text-[#001b1d]"
           >
-            <motion.span
-              variants={textVariants}
-              className="block p-5 transition-all duration-75 ease-in bg-[#FFE182] bg-opacity-0 rounded-full group-hover:bg-opacity-40"
-            >
+            <motion.span className="block p-5 transition-all duration-75 ease-in bg-[#FFE182] bg-opacity-0 rounded-full group-hover:bg-opacity-40">
               Download My CV
             </motion.span>
           </motion.button>
