@@ -33,7 +33,7 @@ const MobileNavbar = ({ navLinks }) => {
     >
       <motion.div
         variants={variants}
-        className=" z-10 fixed top-0 left-0 bottom-0 right-0 w-1/2 bg-[#dccccc] dark:bg-[#002A2E]"
+        className=" z-10 fixed top-0 left-0 bottom-0 right-0 w-full bg-[#dccccc] dark:bg-[#002A2E]"
       >
         <MobileNavLink navLinks={navLinks} />
       </motion.div>

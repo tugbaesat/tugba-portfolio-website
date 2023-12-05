@@ -1,8 +1,8 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import hero from "../../assets/tugba-hero.png";
-import scroll from "../../assets/scroll.png";
+import hero from "../../../public/tugba-hero.png";
+import scroll from "../../../public/scroll.png";
 import { motion } from "framer-motion";
 
 const textVariants = {
@@ -38,7 +38,6 @@ const bottomSliderVariants = {
       duration: 15,
       repeat: Infinity,
     },
-
   },
 };
 const HeroSection = () => {
