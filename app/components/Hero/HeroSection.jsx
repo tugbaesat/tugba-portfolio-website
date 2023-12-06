@@ -44,7 +44,7 @@ const HeroSection = () => {
   return (
     <div className=" pt-[100px] h-screen bg-gradient-to-b to-[#dccccc] from-[#f1eaea]  dark:from-[#001b1d] dark:to-[#002f32] overflow-hidden flex flex-col justify-center items-center md:flex-row text-center">
       <div className="w-1/3 z-10">
-        <Image src={hero} alt="profile-picture" />
+        {/* <Image src={hero} alt="profile-picture" /> */}
       </div>
       <motion.div
         variants={textVariants}
