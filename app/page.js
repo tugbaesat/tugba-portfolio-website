@@ -1,4 +1,5 @@
 import About from "./components/About/About";
+import Contact from "./components/Contact/Contact";
 import HeroSection from "./components/Hero/HeroSection";
 import Navbar from "./components/Navbar/Navbar";
 import Parallax from "./components/Parallax/Parallax";
@@ -20,7 +21,9 @@ export default function Home() {
         <Parallax type="portfolio" />
       </section>
       <Portfolio />
-      <section id="contact">Contact Section</section>
+      <section id="contact">
+        <Contact />
+      </section>
     </main>
   );
 }
