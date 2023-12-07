@@ -22,6 +22,7 @@ export default function Home() {
       </section>
       <Portfolio />
       <section id="contact">
+       
         <Contact />
       </section>
     </main>
