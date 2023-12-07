@@ -2,7 +2,6 @@
 import React from "react";
 import Image from "next/image";
 import hero from "../../../public/tugba-hero.png";
-import scroll from "../../../public/scroll.png";
 import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
 
@@ -68,28 +67,28 @@ const HeroSection = () => {
           >
             Hello, I&apos;m Tugba!
           </motion.h1>
-          <motion.p
-            variants={textVariants}
-            className="text-transparent bg-clip-text bg-gradient-to-r from-[#F8A000] dark:from-[#F0BE47] to-[#FFC500] dark:to-[#FFE182] text-center sm:text-lg lg:text-xl mb-6 uppercase"
-          >
-            a web developer <br />
-            based in Los Angeles
+          <motion.p variants={textVariants} className="mb-6">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#F8A000] dark:from-[#F0BE47] to-[#FFC500] dark:to-[#FFE182] text-center sm:text-lg lg:text-xl  uppercase">
+              a web developer <br />
+              based in Los Angeles, CA{" "}
+            </span>
+            📍
           </motion.p>
           <motion.div variants={textVariants} className="flex">
             <motion.button
               variants={textVariants}
-              className="w-full items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden font-medium rounded-full group bg-gradient-to-br from-[#F8A000] dark:from-[#F0BE47] to-[#FFC500] dark:to-[#FFE182] text-[#f1eaea]  dark:text-[#001b1d]"
+              className="w-64 items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden font-medium rounded-full group bg-gradient-to-br from-[#F8A000] dark:from-[#F0BE47] to-[#FFC500] dark:to-[#FFE182] text-[#f1eaea]  dark:text-[#001b1d]"
             >
-              <motion.span className="block px-5 py-3 transition-all duration-75 ease-in bg-[#FFE182] bg-opacity-0 rounded-full group-hover:bg-opacity-40">
-                See My Latest Works
+              <motion.span className="block p-5 transition-all duration-75 ease-in bg-[#FFE182] bg-opacity-0 rounded-full group-hover:bg-opacity-40">
+                Latest Works
               </motion.span>
             </motion.button>
             <motion.button
               variants={textVariants}
-              className="w-full items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden font-medium rounded-full group bg-gradient-to-br from-[#F8A000] dark:from-[#F0BE47] to-[#FFC500] dark:to-[#FFE182] text-[#f1eaea]  dark:text-[#001b1d]"
+              className="w-64 items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden font-medium rounded-full group bg-gradient-to-br from-[#F8A000] dark:from-[#F0BE47] to-[#FFC500] dark:to-[#FFE182] text-[#f1eaea]  dark:text-[#001b1d]"
             >
               <motion.span className="block p-5 transition-all duration-75 ease-in bg-[#FFE182] bg-opacity-0 rounded-full group-hover:bg-opacity-40">
-                Download My CV
+                Resumé
               </motion.span>
             </motion.button>
           </motion.div>
