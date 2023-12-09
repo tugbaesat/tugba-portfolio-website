@@ -13,6 +13,7 @@ const SingleProject = ({
   code,
   demo,
   propertyTitles,
+  skills,
 }) => {
   const ref = useRef();
   const [selectedPropertyIndex, setSelectedPropertyIndex] = useState(0);
@@ -54,7 +55,16 @@ const SingleProject = ({
               )}
               <p className="text-sm">{properties[selectedPropertyIndex]}</p>
             </div>
-
+            <div className="flex justify-evenly">
+              {skills.map((skill, index) => (
+                <Image
+                  key={index}
+                  src={skill}
+                  alt="skill image"
+                  className="w-10  group-hover:w-14"
+                />
+              ))}
+            </div>
             <div className="flex">
               <a href={code} className="w-full ">
                 <motion.button className="w-full items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden font-medium rounded-full group bg-gradient-to-br from-[#F8A000] dark:from-[#F0BE47] to-[#FFC500] dark:to-[#FFE182] text-[#f1eaea]  dark:text-[#001b1d]">

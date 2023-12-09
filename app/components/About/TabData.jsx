@@ -1,5 +1,5 @@
 import React from "react";
-import skills from "./Skills";
+import { skillsData } from "../Projects";
 import Image from "next/image";
 
 const TAB_DATA = [
@@ -8,7 +8,7 @@ const TAB_DATA = [
     id: "frontend-development",
     content: (
       <ul className="flex gap-10 items-center justify-center">
-        {skills
+        {skillsData
           .filter((skill) => skill.type === "Frontend Development")
           .map((skill) => (
             <li
@@ -33,7 +33,7 @@ const TAB_DATA = [
     id: "libraries-frameworks",
     content: (
       <ul className="flex gap-10 items-center justify-center">
-        {skills
+        {skillsData
           .filter((skill) => skill.type === "Libraries/Frameworks")
           .map((skill) => (
             <li
@@ -58,7 +58,7 @@ const TAB_DATA = [
     id: "testing",
     content: (
       <ul className="flex gap-10 items-center justify-center">
-        {skills
+        {skillsData
           .filter((skill) => skill.type === "Testing")
           .map((skill) => (
             <li
@@ -83,7 +83,7 @@ const TAB_DATA = [
     id: "version-control",
     content: (
       <ul className="flex gap-10 items-center justify-center">
-        {skills
+        {skillsData
           .filter((skill) => skill.type === "Version Control & Collaboration")
           .map((skill) => (
             <li
@@ -108,7 +108,7 @@ const TAB_DATA = [
     id: "backend",
     content: (
       <ul className="flex gap-10 items-center justify-center">
-        {skills
+        {skillsData
           .filter((skill) => skill.type === "Backend Interaction")
           .map((skill) => (
             <li

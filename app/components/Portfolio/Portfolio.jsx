@@ -1,6 +1,6 @@
 "use client";
 import React, { useRef } from "react";
-import projectsData from "./Projects";
+import { projectsData } from "../Projects";
 import { motion, useScroll, useSpring } from "framer-motion";
 import SingleProject from "./SingleProject";
 
@@ -20,19 +20,22 @@ const Portfolio = () => {
           className="bg-[#494949] dark:bg-[#dedede] h-2"
         ></motion.div>
       </div>
-      {projectsData.map((project) => (
-        <SingleProject
-          key={project.id}
-          projectId={project.id}
-          title={project.title}
-          src={project.image}
-          description={project.description}
-          propertyTitles={project.propertyTitles}
-          properties={project.properties}
-          code={project.gitUrl}
-          demo={project.previewUrl}
-        />
-      ))}
+      {projectsData.map((project) => {
+        console.log(project.skills);
+        return (
+          <SingleProject
+            key={project.id}
+            title={project.title}
+            src={project.image}
+            description={project.description}
+            propertyTitles={project.propertyTitles}
+            properties={project.properties}
+            code={project.gitUrl}
+            demo={project.previewUrl}
+            skills={project.skills}
+          />
+        );
+      })}
     </div>
   );
 };
