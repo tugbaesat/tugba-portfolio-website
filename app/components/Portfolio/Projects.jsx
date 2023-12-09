@@ -20,10 +20,10 @@ const projectsData = [
     gitUrl: "https://github.com/tugbaesat/Learnification",
     previewUrl: "https://learn-u-team-7.vercel.app/",
     propertyTitles: [
-      "Technology Stack:",
-      "Collaborative Development:",
-      "User-Centric Design:",
-      "Secure Access:",
+      "Technology Stack",
+      "Collaborative Development",
+      "User-Centric Design",
+      "Secure Access",
     ],
     properties: [
       "Develop a dynamic learning platform using React-based web app withNext.js. Implement Tailwind CSS for a sleek, responsive design, and utilize MongoDB for efficient data storage.",
@@ -40,23 +40,19 @@ const projectsData = [
     image: movieApp,
     gitUrl: "https://github.com/tugbaesat/movie-project",
     previewUrl: "https://movie-project-tugbaesat.vercel.app/",
-    prropertytitles: [
-      "Technology Stack:",
-      "API Integration:",
-      "Universal Navigation:",
-      "Responsive Design:",
-      "Individual Pages for Movies and Actors:",
-      "Interactive Trailers:",
-      "Advanced Search and Filtering:",
+    propertyTitles: [
+      "Technology Stack",
+      "API Integration & Data",
+      "Navigation & UX",
+      "Responsive Design",
+      "Content Pages & Interaction",
     ],
     properties: [
       "Develop a dynamic web application utilizing HTML, JavaScript, and TailwindCSS to craft a user-friendly and visually appealing interface.",
       "Connect and leverage The Movie DB API to source comprehensive moviedetails, ratings, trailers, and related content, ensuring an expansive database for user exploration.",
-      "Implement a consistent and easily accessible navigation bar for seamlessmovement across various pages and screen sizes, ensuring a user-friendly experience.",
+      "Implement a consistent and easily accessible navigation bar for seamless movement across various pages and screen sizes, ensuring a user-friendly experience.",
       "Utilize Tailwind CSS for responsive design elements, ensuring the platform'sadaptability to different screen types and providing an optimal viewing experience.",
-      "Create dedicated pages for each movie and actor,offering in-depth information and an interactive browsing experience for users seeking detailed insights.",
-      "Incorporate interactive trailer viewing experiences for a more immersivepresentation of movie content.",
-      "Implement advanced search and filtering options for users tonavigate the extensive movie and cast database more efficiently.",
+      "Create dedicated pages for each movie and actor,offering in-depth information and an interactive browsing experience for users seeking detailed insights and implement advanced search and filtering options for users tonavigate the extensive movie and cast database more efficiently.",
     ],
   },
   {
@@ -67,11 +63,11 @@ const projectsData = [
     image: movieNomination,
     gitUrl: "https://github.com/tugbaesat/movie-nomination",
     previewUrl: "https://movie-nomination.vercel.app",
-    properyTitles: [
-      "Technology Stack:",
-      "OMDB Integration:",
-      "Intuitive Nomination System:",
-      "User-Centric Experience:",
+    propertyTitles: [
+      "Technology Stack",
+      "OMDB Integration",
+      "Intuitive Nomination System",
+      "User-Centric Experience",
     ],
     properties: [
       "Develop a Next.js project integrated with the OMDB API to enable users tosearch, display movie details, and manage nominations efficiently.",
@@ -89,10 +85,10 @@ const projectsData = [
     gitUrl: "https://github.com/tugbaesat/space-tourism-website",
     previewUrl: "https://space-tourism-website-tugbaesat.vercel.app",
     propertyTitles: [
-      "Technology Stack:",
-      "Multi-Page Experience:",
-      "Responsive Design:",
-      "Interactive Elements:",
+      "Technology Stack",
+      "Multi-Page Experience",
+      "Responsive Design",
+      "Interactive Elements",
     ],
     properties: [
       "Utilize React with Next.js for seamless page rendering and efficient routing.Implement Tailwind CSS for responsive and sleek design elements.",
@@ -109,7 +105,7 @@ const projectsData = [
     image: tipCalculator,
     gitUrl: "https://github.com/tugbaesat/nextjs-tip-calculator",
     previewUrl: "https://nextjs-tip-calculator.vercel.app/",
-    propertyTitles: ["Technology Stack:"],
+    propertyTitles: ["Technology Stack"],
     properties: [
       "Developed using Next.js and React, the project ensures a seamless andinteractive experience for users seeking an accurate breakdown of the tip and the bill amountper person.",
     ],
@@ -122,7 +118,7 @@ const projectsData = [
     image: simon,
     gitUrl: "https://github.com/tugbaesat/simon-game",
     previewUrl: "https://simon-game-tugbaesat.vercel.app/",
-    propertyTitles: ["Technology Stack:"],
+    propertyTitles: ["Technology Stack"],
     properties: [
       "Developed using HTML, CSS, and jQuery, the project focuses on building anengaging and interactive online version of the Simon Game, offering players an immersiveexperience of the classic electronic game's challenges and excitement.",
     ],
@@ -135,7 +131,7 @@ const projectsData = [
     image: diceeApp,
     gitUrl: "https://github.com/tugbaesat/dicee-challenge",
     previewUrl: "https://dicee-challenge-tugbaesat.vercel.app/",
-    propertyTitles: ["Technology Stack:"],
+    propertyTitles: ["Technology Stack"],
     properties: [
       "Using HTML, CSS, and jQuery, the project provides a user-friendly interfacefor an engaging dice game experience. Players interact with the virtual dice, fostering an elementof chance and fun within the game.",
     ],
@@ -148,7 +144,7 @@ const projectsData = [
     image: drumKit,
     gitUrl: "https://github.com/tugbaesat/drum-kit",
     previewUrl: "https://drum-kit-tugbaesat.vercel.app",
-    propertyTitles: ["Technology Stack:"],
+    propertyTitles: ["Technology Stack"],
     properties: [
       "Developed using HTML, CSS, and jQuery, the project delivers an engagingand interactive experience, allowing users to produce music by simply using their computer'skeyboard. The implementation provides an accessible and enjoyable platform for musicalexperimentation and expression.",
     ],
@@ -161,7 +157,7 @@ const projectsData = [
     image: clipboard,
     gitUrl: "https://github.com/tugbaesat/clipboard-landing-page-challenge",
     previewUrl: "https://clipboard-landing-page-challenge.vercel.app",
-    propertyTitles: ["Technology Stack:"],
+    propertyTitles: ["Technology Stack"],
     properties: [
       "Developed using HTML and CSS, the project emphasizes not only accuracy indesign replication but also responsiveness, ensuring the landing page adjusts effectively acrossdifferent devices and screen sizes.",
     ],
@@ -174,7 +170,7 @@ const projectsData = [
     image: blogr,
     gitUrl: "https://github.com/tugbaesat/landing-page-challenge",
     previewUrl: "https://blogr-landing-page-tugbaesat.vercel.app",
-    propertyTitles: ["Technology Stack:"],
+    propertyTitles: ["Technology Stack"],
     properties: [
       "Developed using HTML, CSS, and Bootstrap, the project underscoresaccuracy in design replication and responsiveness. The inclusion of Bootstrap further enhancesthe adaptability of the landing page, ensuring effective adjustments across different devices andscreen sizes.",
     ],
@@ -184,7 +180,7 @@ const projectsData = [
     title: "Form Validation Project with React Hook Form",
     description:
       "The React Hook Form project is dedicated to form validation, leveraging the functionalities providedby React Hook Form. The primary focus is on implementing robust form validation techniques toensure data integrity and accuracy within user input fields.",
-    propertyTitles: ["Technology Stack:"],
+    propertyTitles: ["Technology Stack"],
     properties: [
       "Utilizing Next.js and React, the project aims to showcase form validationcapabilities using React Hook Form. This tech stack allows for seamless and efficient renderingand management of form inputs, offering a user-friendly experience while ensuring datavalidation.",
     ],

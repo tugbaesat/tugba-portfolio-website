@@ -27,6 +27,7 @@ const Portfolio = () => {
           title={project.title}
           src={project.image}
           description={project.description}
+          propertyTitles={project.propertyTitles}
           properties={project.properties}
           code={project.gitUrl}
           demo={project.previewUrl}

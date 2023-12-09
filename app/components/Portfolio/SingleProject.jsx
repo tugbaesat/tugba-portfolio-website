@@ -1,4 +1,5 @@
-import React, { useRef } from "react";
+"use client";
+import React, { useRef, useState } from "react";
 import Image from "next/image";
 import { motion, useTransform, useScroll } from "framer-motion";
 
@@ -11,32 +12,49 @@ const SingleProject = ({
   properties,
   code,
   demo,
+  propertyTitles,
 }) => {
   const ref = useRef();
+  const [selectedPropertyIndex, setSelectedPropertyIndex] = useState(0);
 
   const { scrollYProgress } = useScroll({
     target: ref,
-    // offset: ["start start", "end start"],
   });
   const y = useTransform(scrollYProgress, [0, 1], [-300, 300]);
-  const isEvenKey = projectId % 2 === 0;
+
+  const handleTitleClick = (index) => {
+    setSelectedPropertyIndex(index);
+  };
+
   return (
     <section key={key}>
       <div className="flex justify-center items-center w-full h-full overflow-hidden">
         <div className="m-10 max-w-7xl h-full flex gap-10 items-center justify-center">
-          {isEvenKey ? (
-            <div ref={ref} className="flex-1 h-1/2">
-              <Image
-                src={src}
-                alt="project images"
-                className="w-full h-full object-cover rounded-lg"
-              />
-            </div>
-          ) : null}
-          <motion.div style={{ y }} className="flex-1 flex flex-col gap-2">
+          <motion.div style={{ y }} className="flex-1 flex flex-col gap-4">
             <h3 className="text-xl font-bold">{title}</h3>
             <p className="text-sm">{description}</p>
-            <p className="text-sm">{properties}</p>
+            <div className="flex ">
+              {propertyTitles && propertyTitles.length > 0 && (
+                <h5>
+                  {propertyTitles.map((title, index) => (
+                    <button
+                      key={index}
+                      onClick={() => handleTitleClick(index)}
+                      className={`pr-6 py-2 text-left
+                    {${
+                      index === selectedPropertyIndex
+                        ? "text-slate-400 underline font-bold"
+                        : "text-[#adb7be] "
+                    }`}
+                    >
+                      {title}
+                    </button>
+                  ))}
+                </h5>
+              )}
+              <p className="text-sm">{properties[selectedPropertyIndex]}</p>
+            </div>
+
             <div className="flex">
               <a href={code} className="w-full ">
                 <motion.button className="w-full items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden font-medium rounded-full group bg-gradient-to-br from-[#F8A000] dark:from-[#F0BE47] to-[#FFC500] dark:to-[#FFE182] text-[#f1eaea]  dark:text-[#001b1d]">
@@ -55,15 +73,14 @@ const SingleProject = ({
               </a>
             </div>
           </motion.div>
-          {isEvenKey ? null : (
-            <div ref={ref} className="flex-1 h-1/2">
-              <Image
-                src={src}
-                alt="project images"
-                className="w-full h-full object-cover rounded-lg"
-              />
-            </div>
-          )}
+
+          <div ref={ref} className="flex-1 h-1/2">
+            <Image
+              src={src}
+              alt="project images"
+              className="w-full h-full object-cover rounded-lg"
+            />
+          </div>
         </div>
       </div>
     </section>
