@@ -15,7 +15,7 @@ import npm from "../../public/skills/icons8-npm-96.png";
 import vscode from "../../public/skills/icons8-visual-studio-code-2019-96.png";
 import jquery from "../../public/skills/icons8-jquery-96.png";
 import jest from "../../public/skills/icons8-jest-96.png";
-import learningApp from "../../public/projects/learning-app.png";
+import learningApp from "../../public/projects/learning-app.jpg";
 import movieApp from "../../public/projects/movie-project.png";
 import movieNomination from "../../public/projects/movie-nomination.png";
 import tipCalculator from "../../public/projects/tip-calculator.png";
