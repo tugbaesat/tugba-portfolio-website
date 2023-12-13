@@ -9,7 +9,7 @@ import TAB_DATA from "./TabData";
 const About = () => {
   const variants = {
     initial: {
-      x: -500,
+      x: -200,
       y: 100,
       opacity: 0,
     },
@@ -43,34 +43,32 @@ const About = () => {
       initial="initial"
       ref={ref}
       animate={isInView && "animate"}
-      className=" h-screen bg-gradient-to-b to-[#dccccc] from-[#f1eaea]  dark:from-[#001b1d] dark:to-[#002f32] overflow-hidden flex flex-col justify-center items-center text-center gap-10"
+      className=" pt-[120px] h-screen bg-gradient-to-b to-[#dccccc] from-[#f1eaea]  dark:from-[#001b1d] dark:to-[#002f32] overflow-hidden flex flex-col justify-center items-center text-center gap-4 lg:gap-10"
     >
-      <motion.div
-        variants={variants}
-        className="flex items-center justify-center gap-6"
-      >
+      <motion.div variants={variants} className="flex flex-col lg:flex-row items-center justify-center gap-6">
         <Image
           src={pc}
           alt="old computer image"
-          className="object-cover w-20 h-10 md:w-40 md:h-20 rounded-3xl "
+          className="object-cover w-full h-auto lg:w-40 lg:h-20 rounded-3xl "
         />
-        <h2 className="text-4xl md:text-7xl text-transparent bg-clip-text bg-gradient-to-r from-[#F8A000] dark:from-[#F0BE47] to-[#FFC500] dark:to-[#FFE182] text-center">
+        <h2 className="text-4xl lg:text-7xl text-transparent bg-clip-text bg-gradient-to-r from-[#F8A000] dark:from-[#F0BE47] to-[#FFC500] dark:to-[#FFE182] text-center">
           {" "}
           <b>About </b> Me
         </h2>
       </motion.div>
-      <p className="w-1/2  text-center sm:text-lg lg:text-xl mb-6">
+      <motion.p variants={variants} className="w-full px-4 lg:w-1/2 text-center sm:text-lg lg:text-xl mb-6">
         I am a web developer with a strong engineering background, offering a
         unique mix of technical proficiency and creative problem-solving skills.
         I am passionate about creating seamless, user-friendly websites and
         bring a systematic and analytical approach to development, rooted in my
         engineering foundation.
-      </p>
-      <div>
-        <h3 className="text-xl md:text-4xl text-transparent bg-clip-text bg-gradient-to-r from-[#F8A000] dark:from-[#F0BE47] to-[#FFC500] dark:to-[#FFE182] text-center mb-4">
+      </motion.p>
+      <motion.div variants={variants}>
+        <h3 className="text-xl lg:text-4xl text-transparent bg-clip-text bg-gradient-to-r from-[#F8A000] dark:from-[#F0BE47] to-[#FFC500] dark:to-[#FFE182] text-center mb-4">
           Tech Stack
         </h3>
-        <div className="flex flex-row mt-8">
+
+        <div className="flex flex-col md:flex-row px-6 gap-2 mt-8 text-left">
           {TAB_DATA.map((tabData) => (
             <TabButton
               key={tabData.id}
@@ -84,9 +82,10 @@ const About = () => {
         <div className="mt-6 text-left text-xs">
           {currentTabData ? currentTabData.content : null}
         </div>
-      </div>
+      </motion.div>
     </motion.div>
   );
 };
 
 export default About;
+

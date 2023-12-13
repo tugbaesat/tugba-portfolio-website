@@ -46,7 +46,7 @@ const variants = {
 const HeroSection = () => {
   return (
     <div className=" pt-[100px] h-screen bg-gradient-to-b to-[#dccccc] from-[#f1eaea]  dark:from-[#001b1d] dark:to-[#002f32] overflow-hidden ">
-      <div className="flex flex-col justify-evenly items-center md:flex-row text-center">
+      <div className="flex flex-col justify-evenly items-center lg:flex-row text-center">
         <motion.div
           variants={variants}
           initial="initial"
@@ -59,7 +59,7 @@ const HeroSection = () => {
           variants={textVariants}
           initial="initial"
           animate="animate"
-          className="flex flex-col items-center z-10"
+          className="flex flex-col items-center gap-12 lg:gap-6 z-10"
         >
           <motion.h1
             variants={textVariants}
@@ -75,33 +75,39 @@ const HeroSection = () => {
             📍
           </motion.p>
           <motion.div variants={textVariants} className="flex">
-            <motion.button
-              variants={textVariants}
-              className="w-64 items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden font-medium rounded-full group bg-gradient-to-br from-[#F8A000] dark:from-[#F0BE47] to-[#FFC500] dark:to-[#FFE182] text-[#f1eaea]  dark:text-[#001b1d]"
-            >
-              <motion.span className="block p-5 transition-all duration-75 ease-in bg-[#FFE182] bg-opacity-0 rounded-full group-hover:bg-opacity-40">
-                Latest Works
-              </motion.span>
-            </motion.button>
-            <motion.button
-              variants={textVariants}
-              className="w-64 items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden font-medium rounded-full group bg-gradient-to-br from-[#F8A000] dark:from-[#F0BE47] to-[#FFC500] dark:to-[#FFE182] text-[#f1eaea]  dark:text-[#001b1d]"
-            >
-              <motion.span className="block p-5 transition-all duration-75 ease-in bg-[#FFE182] bg-opacity-0 rounded-full group-hover:bg-opacity-40">
-                Resumé
-              </motion.span>
-            </motion.button>
+            <a href="#portfolio">
+              <motion.button
+                variants={textVariants}
+                className="w-40 lg:w-64 items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden font-medium rounded-full group bg-gradient-to-br from-[#F8A000] dark:from-[#F0BE47] to-[#FFC500] dark:to-[#FFE182] text-[#f1eaea]  dark:text-[#001b1d]"
+              >
+                <motion.span className="block p-5 transition-all duration-75 ease-in bg-[#FFE182] bg-opacity-0 rounded-full group-hover:bg-opacity-40">
+                  Latest Works
+                </motion.span>
+              </motion.button>
+            </a>
+            <a href="/TugbaEsatSahin-Resume.pdf" download="TugbaEsatSahin-Resume">
+              <motion.button
+                variants={textVariants}
+                className="w-40 lg:w-64 items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden font-medium rounded-full group bg-gradient-to-br from-[#F8A000] dark:from-[#F0BE47] to-[#FFC500] dark:to-[#FFE182] text-[#f1eaea]  dark:text-[#001b1d]"
+              >
+                <motion.span className="block p-5 transition-all duration-75 ease-in bg-[#FFE182] bg-opacity-0 rounded-full group-hover:bg-opacity-40">
+                  Resumé
+                </motion.span>
+              </motion.button>
+            </a>
           </motion.div>
         </motion.div>
       </div>
-      <div className="-z-1 text-[140px] absolute bottom-0 right-0 left-0 text-center opacity-40 font-extrabold">
+      <div className="-z-1 text-7xl lg:text-[140px] absolute bottom-[20%] lg:bottom-[10%] right-0 left-0 text-center opacity-40 font-extrabold">
         <TypeAnimation
           sequence={[
-            "Full Stack Developer",
-            1000,
             "Engineer",
             1000,
+            "Full Stack Developer",
+            1000,
             "Frontend Developer",
+            1000,
+            "Web Developer",
             1000,
           ]}
           wrapper="span"

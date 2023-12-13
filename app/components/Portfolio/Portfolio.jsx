@@ -13,15 +13,15 @@ const Portfolio = () => {
   const scaleX = useSpring(scrollYProgress, { stiffness: 150, damping: 30 });
   return (
     <div ref={ref} className="relative">
-      <div className="sticky top-0 left-0 pt-16 text-center text-transparent bg-clip-text bg-gradient-to-r from-[#F8A000] dark:from-[#F0BE47] to-[#FFC500] dark:to-[#FFE182] text-4xl md:text-7xl">
+      <div className="sticky top-0 pt-[90vh] lg:pt-[10vh] text-center text-transparent bg-clip-text bg-gradient-to-r from-[#F8A000] dark:from-[#F0BE47] to-[#FFC500] dark:to-[#FFE182] text-4xl lg:text-7xl">
         <h2>Featured Works</h2>
         <motion.div
           style={{ scaleX }}
           className="bg-[#494949] dark:bg-[#dedede] h-2"
         ></motion.div>
       </div>
+
       {projectsData.map((project) => {
-        console.log(project.skills);
         return (
           <SingleProject
             key={project.id}

@@ -27,8 +27,8 @@ const Form = () => {
   };
   return (
     <form className="flex flex-col text-left " onSubmit={sendEmail}>
-      <div className="mb-6">
-        <label className="block mb-2 text-sm font-medium  " htmlFor="name">
+      <div className="pb-6">
+        <label className="block pb-2 text-sm font-medium  " htmlFor="name">
           Name
         </label>
         <input
@@ -40,8 +40,8 @@ const Form = () => {
           className=" border border-gray-400  text-sm rounded-lg block w-full p-2.5 bg-transparent"
         />
       </div>
-      <div className="mb-6">
-        <label className="block mb-2 text-sm font-medium " htmlFor="subject">
+      <div className="pb-6">
+        <label className="block pb-2 text-sm font-medium " htmlFor="subject">
           Email
         </label>
         <input
@@ -53,8 +53,8 @@ const Form = () => {
           className=" border border-gray-400   text-sm rounded-lg block w-full p-2.5 bg-transparent"
         />
       </div>
-      <div className="mb-6">
-        <label className="block mb-2 text-sm font-medium  " htmlFor="subject">
+      <div className="pb-6">
+        <label className="block pb-2 text-sm font-medium  " htmlFor="subject">
           Subject
         </label>
         <input
@@ -66,14 +66,14 @@ const Form = () => {
           className=" border border-gray-400  text-sm rounded-lg block w-full p-2.5 bg-transparent"
         />
       </div>
-      <div className="mb-6">
-        <label htmlFor="message" className="block mb-2 text-sm font-medium ">
+      <div className="pb-6">
+        <label htmlFor="message" className="block pb-2 text-sm font-medium ">
           Message
         </label>
         <textarea
           name="message"
           id="message"
-          rows={8}
+          rows={4}
           className=" border border-gray-400   text-sm rounded-lg block w-full p-2.5 bg-transparent"
           placeholder={`Hi, Tugba!
 Let's talk about...`}
@@ -82,14 +82,14 @@ Let's talk about...`}
       <button
         type="submit"
         value="Send"
-        className="w-full items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden font-medium rounded-full group bg-gradient-to-br from-[#F8A000] dark:from-[#F0BE47] to-[#FFC500] dark:to-[#FFE182] text-[#f1eaea]  dark:text-[#001b1d]"
+        className="w-full items-center justify-center p-0.5 pb-2 mr-2 overflow-hidden font-medium rounded-full group bg-gradient-to-br from-[#F8A000] dark:from-[#F0BE47] to-[#FFC500] dark:to-[#FFE182] text-[#f1eaea]  dark:text-[#001b1d]"
       >
-        <span className="block p-5 transition-all duration-75 ease-in bg-[#FFE182] bg-opacity-0 rounded-full group-hover:bg-opacity-40">
+        <span className="block p-2 transition-all duration-75 ease-in bg-[#FFE182] bg-opacity-0 rounded-full group-hover:bg-opacity-40">
           Send Message
         </span>
       </button>
       {error && (
-        <p className="text-transparent bg-clip-text bg-gradient-to-r from-[#f85b00] dark:from-[#f06e47] to-[#ff9d00] dark:to-[#ffc782] text-center sm:text-lg lg:text-xl mb-6">
+        <p className="text-transparent bg-clip-text bg-gradient-to-r from-[#f85b00] dark:from-[#f06e47] to-[#ff9d00] dark:to-[#ffc782] text-center sm:text-lg lg:text-xl pb-6">
           Oops! Something went wrong while processing your request. Please check
           your information and try again. If the issue persists, feel free to
           contact me directly at{" "}
@@ -98,7 +98,7 @@ Let's talk about...`}
         </p>
       )}
       {success && (
-        <p className="text-transparent bg-clip-text bg-gradient-to-r from-[#F8A000] dark:from-[#F0BE47] to-[#FFC500] dark:to-[#FFE182] text-center sm:text-lg lg:text-xl mb-6">
+        <p className="text-transparent bg-clip-text bg-gradient-to-r from-[#F8A000] dark:from-[#F0BE47] to-[#FFC500] dark:to-[#FFE182] text-center sm:text-lg lg:text-xl pb-6">
           Thank you so much for reaching out! <br />I will get back to you
           shortly.
         </p>

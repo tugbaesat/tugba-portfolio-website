@@ -20,12 +20,12 @@ const Parallax = ({ type }) => {
           : "bg-gradient-to-b to-[#dccccc] from-[#f1eaea]  dark:from-[#001b1d] dark:to-[#002f32]"
       } w-full h-full relative flex justify-center items-center overflow-hidden`}
     >
-      <motion.h1 style={{ y: yText }} className="text-7xl lg:text-8xl">
+      <motion.h1 style={{ y: yText }} className="pb-40 text-7xl lg:text-8xl">
         {type === "about" ? "Who Am I?" : "What I Did?"}
       </motion.h1>
-      <motion.div className="mountains"></motion.div>
+      <motion.div className="mountains bg-contain bg-no-repeat md:bg-cover bg-bottom w-full h-full absolute"></motion.div>
       <motion.div
-        className="planets"
+        className="planets bg-contain bg-no-repeat md:bg-cover bg-center w-full h-full absolute"
         style={{
           y: yBg,
           backgroundImage: `url(${
@@ -33,7 +33,7 @@ const Parallax = ({ type }) => {
           })`,
         }}
       ></motion.div>
-      <motion.div style={{ x: yText }} className="stars"></motion.div>
+      <motion.div style={{ x: yText }} className="stars  bg-no-repeat bg-cover bg-center w-full h-full absolute"></motion.div>
     </div>
   );
 };

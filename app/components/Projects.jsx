@@ -16,16 +16,16 @@ import vscode from "../../public/skills/icons8-visual-studio-code-2019-96.png";
 import jquery from "../../public/skills/icons8-jquery-96.png";
 import jest from "../../public/skills/icons8-jest-96.png";
 import learningApp from "../../public/projects/learning-app.jpg";
-import movieApp from "../../public/projects/movie-project.png";
-import movieNomination from "../../public/projects/movie-nomination.png";
-import tipCalculator from "../../public/projects/tip-calculator.png";
-import simon from "../../public/projects/simon-game.png";
-import diceeApp from "../../public/projects/dicee-app.png";
-import drumKit from "../../public/projects/drum-kit.png";
-import clipboard from "../../public/projects/clipboard-landing.png";
-import blogr from "../../public/projects/blogr-landing.png";
-import reactForm from "../../public/projects/react-form-app.png";
-import space from "../../public/projects/space.png";
+import movieApp from "../../public/projects/movie-project.jpg";
+import movieNomination from "../../public/projects/movie-nomination.jpg";
+import tipCalculator from "../../public/projects/tip-calculator.jpg";
+import simon from "../../public/projects/simon-game.jpg";
+// import diceeApp from "../../public/projects/dicee-app.jpg";
+// import drumKit from "../../public/projects/drum-kit.jpg";
+import clipboard from "../../public/projects/clipboard-landing.jpg";
+import blogr from "../../public/projects/blogr-landing.jpg";
+// import reactForm from "../../public/projects/react-form-app.jpg";
+import space from "../../public/projects/space.jpg";
 
 const skillsImages = {
   React: react,
@@ -190,10 +190,10 @@ const projectsData = [
     previewUrl: "https://movie-project-tugbaesat.vercel.app/",
     propertyTitles: [
       "Technology Stack",
-      "API Integration & Data",
+      "API Integration",
       "Navigation & UX",
-      "Responsive Design",
-      "Content Pages & Interaction",
+      "Responsiveness",
+      "Content Pages",
     ],
     properties: [
       "Develop a dynamic web application utilizing HTML, JavaScript, and TailwindCSS to craft a user-friendly and visually appealing interface.",
@@ -281,44 +281,44 @@ const projectsData = [
       skillsImages.CSS,
     ],
   },
-  {
-    id: "dice",
-    title: "Dicee App",
-    description:
-      "The Dicee project offers a simple yet entertaining app for two players to engage in a dice game. Luckand excitement reign as players choose a dice, igniting a thrilling competition to determine the winner.",
-    image: diceeApp,
-    gitUrl: "https://github.com/tugbaesat/dicee-challenge",
-    previewUrl: "https://dicee-challenge-tugbaesat.vercel.app/",
-    propertyTitles: ["Technology Stack"],
-    properties: [
-      "Using HTML, CSS, and jQuery, the project provides a user-friendly interfacefor an engaging dice game experience. Players interact with the virtual dice, fostering an elementof chance and fun within the game.",
-    ],
-    skills: [
-      skillsImages.HTML,
-      skillsImages.JavaScript,
-      skillsImages.jQuery,
-      skillsImages.CSS,
-    ],
-  },
-  {
-    id: "drum",
-    title: "Drum Kit",
-    description:
-      "The Drum Kit project is an interactive web application allowing users to play various instrumentsusing their keyboard. It provides a virtual drum set, enabling users to create rhythmic tunes andbeats through keyboard inputs.",
-    image: drumKit,
-    gitUrl: "https://github.com/tugbaesat/drum-kit",
-    previewUrl: "https://drum-kit-tugbaesat.vercel.app",
-    propertyTitles: ["Technology Stack"],
-    properties: [
-      "Developed using HTML, CSS, and jQuery, the project delivers an engagingand interactive experience, allowing users to produce music by simply using their computer'skeyboard. The implementation provides an accessible and enjoyable platform for musicalexperimentation and expression.",
-    ],
-    skills: [
-      skillsImages.HTML,
-      skillsImages.JavaScript,
-      skillsImages.jQuery,
-      skillsImages.CSS,
-    ],
-  },
+  // {
+  //   id: "dice",
+  //   title: "Dicee App",
+  //   description:
+  //     "The Dicee project offers a simple yet entertaining app for two players to engage in a dice game. Luckand excitement reign as players choose a dice, igniting a thrilling competition to determine the winner.",
+  //   image: diceeApp,
+  //   gitUrl: "https://github.com/tugbaesat/dicee-challenge",
+  //   previewUrl: "https://dicee-challenge-tugbaesat.vercel.app/",
+  //   propertyTitles: ["Technology Stack"],
+  //   properties: [
+  //     "Using HTML, CSS, and jQuery, the project provides a user-friendly interfacefor an engaging dice game experience. Players interact with the virtual dice, fostering an elementof chance and fun within the game.",
+  //   ],
+  //   skills: [
+  //     skillsImages.HTML,
+  //     skillsImages.JavaScript,
+  //     skillsImages.jQuery,
+  //     skillsImages.CSS,
+  //   ],
+  // },
+  // {
+  //   id: "drum",
+  //   title: "Drum Kit",
+  //   description:
+  //     "The Drum Kit project is an interactive web application allowing users to play various instrumentsusing their keyboard. It provides a virtual drum set, enabling users to create rhythmic tunes andbeats through keyboard inputs.",
+  //   image: drumKit,
+  //   gitUrl: "https://github.com/tugbaesat/drum-kit",
+  //   previewUrl: "https://drum-kit-tugbaesat.vercel.app",
+  //   propertyTitles: ["Technology Stack"],
+  //   properties: [
+  //     "Developed using HTML, CSS, and jQuery, the project delivers an engagingand interactive experience, allowing users to produce music by simply using their computer'skeyboard. The implementation provides an accessible and enjoyable platform for musicalexperimentation and expression.",
+  //   ],
+  //   skills: [
+  //     skillsImages.HTML,
+  //     skillsImages.JavaScript,
+  //     skillsImages.jQuery,
+  //     skillsImages.CSS,
+  //   ],
+  // },
   {
     id: "clipboard",
     title: "Clipboard Landing Page",
@@ -347,20 +347,20 @@ const projectsData = [
     ],
     skills: [skillsImages.HTML, skillsImages.CSS, skillsImages.Bootstrap],
   },
-  {
-    id: "react-form",
-    title: "Form Validation Project with React Hook Form",
-    description:
-      "The React Hook Form project is dedicated to form validation, leveraging the functionalities providedby React Hook Form. The primary focus is on implementing robust form validation techniques toensure data integrity and accuracy within user input fields.",
-    propertyTitles: ["Technology Stack"],
-    properties: [
-      "Utilizing Next.js and React, the project aims to showcase form validation capabilities using React Hook Form. This tech stack allows for seamless and efficient renderingand management of form inputs, offering a user-friendly experience while ensuring datavalidation.",
-    ],
-    image: reactForm,
-    gitUrl: "https://github.com/tugbaesat/react-form-app",
-    previewUrl: "https://react-form-tugbaesat.vercel.app",
-    skills: [skillsImages.React, skillsImages.Nextjs, skillsImages.Tailwind],
-  },
+  // {
+  //   id: "react-form",
+  //   title: "Form Validation Project with React Hook Form",
+  //   description:
+  //     "The React Hook Form project is dedicated to form validation, leveraging the functionalities providedby React Hook Form. The primary focus is on implementing robust form validation techniques toensure data integrity and accuracy within user input fields.",
+  //   propertyTitles: ["Technology Stack"],
+  //   properties: [
+  //     "Utilizing Next.js and React, the project aims to showcase form validation capabilities using React Hook Form. This tech stack allows for seamless and efficient renderingand management of form inputs, offering a user-friendly experience while ensuring datavalidation.",
+  //   ],
+  //   image: reactForm,
+  //   gitUrl: "https://github.com/tugbaesat/react-form-app",
+  //   previewUrl: "https://react-form-tugbaesat.vercel.app",
+  //   skills: [skillsImages.React, skillsImages.Nextjs, skillsImages.Tailwind],
+  // },
 ];
 
 export { skillsData, projectsData };

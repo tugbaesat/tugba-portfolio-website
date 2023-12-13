@@ -26,7 +26,7 @@ const itemVariants = {
   },
 };
 
-const MobileNavLink = ({ navLinks }) => {
+const MobileNavLink = ({ open, setOpen, navLinks }) => {
   return (
     <motion.div
       variants={variants}
@@ -38,6 +38,7 @@ const MobileNavLink = ({ navLinks }) => {
             variants={itemVariants}
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.95 }}
+            onClick={() => setOpen(!open)}
           >
             {link.title}
           </motion.div>

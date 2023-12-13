@@ -1,14 +1,17 @@
-import React from 'react'
+import React from "react";
 
-const TabButton = ({active, selectTab, children}) => {
-const buttonClasses = active ? "text-slate-400 underline" : " text-[#adb7be]"
-
+const TabButton = ({ active, selectTab, children }) => {
   return (
     <button onClick={selectTab}>
-        <p className={`mr-3 font-semibold ${buttonClasses}`}>{children}</p>
-        
+      <p
+        className={`md:mr-3 text-left md:text-center ${
+          active ? "underline md:font-semibold" : "dark:text-[#767474] text-[#494949]"
+        } `}
+      >
+        {children}
+      </p>
     </button>
-  )
-}
+  );
+};
 
-export default TabButton
+export default TabButton;
