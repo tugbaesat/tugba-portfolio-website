@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 html {
-  scroll-snap-type: y mandatory;
-  scroll-behavior: smooth;
+  scroll-snap-type:y mandatory;
+  scroll-behavior:smooth;
 }
 
 * {
@@ -24,8 +24,8 @@ body {
   }
 }
 section {
-  min-height: 100vh;
-  scroll-snap-align: center;
+  height: 100vh;
+  scroll-snap-align: start;
 }
 
 a {
