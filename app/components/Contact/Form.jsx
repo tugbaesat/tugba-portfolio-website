@@ -28,7 +28,7 @@ const Form = () => {
   return (
     <form className="flex flex-col text-left " onSubmit={sendEmail}>
       <div className="pb-6">
-        <label className="block pb-2 text-sm font-medium  " htmlFor="name">
+        <label className="block pb-2 text-xs font-medium  " htmlFor="name">
           Name
         </label>
         <input
@@ -37,11 +37,11 @@ const Form = () => {
           id="text"
           required
           placeholder="Jane Doe"
-          className=" border border-gray-400  text-sm rounded-lg block w-full p-2.5 bg-transparent"
+          className=" border border-gray-400  text-xs rounded-lg block w-full p-2.5 bg-transparent"
         />
       </div>
       <div className="pb-6">
-        <label className="block pb-2 text-sm font-medium " htmlFor="subject">
+        <label className="block pb-2 text-xs font-medium " htmlFor="subject">
           Email
         </label>
         <input
@@ -50,11 +50,11 @@ const Form = () => {
           id="email"
           required
           placeholder="example@email.com"
-          className=" border border-gray-400   text-sm rounded-lg block w-full p-2.5 bg-transparent"
+          className=" border border-gray-400   text-xs rounded-lg block w-full p-2.5 bg-transparent"
         />
       </div>
       <div className="pb-6">
-        <label className="block pb-2 text-sm font-medium  " htmlFor="subject">
+        <label className="block pb-2 text-xs font-medium  " htmlFor="subject">
           Subject
         </label>
         <input
@@ -63,19 +63,19 @@ const Form = () => {
           id="text"
           required
           placeholder="Just saying hi!"
-          className=" border border-gray-400  text-sm rounded-lg block w-full p-2.5 bg-transparent"
+          className=" border border-gray-400  text-xs rounded-lg block w-full p-2.5 bg-transparent"
         />
       </div>
       <div className="pb-6">
-        <label htmlFor="message" className="block pb-2 text-sm font-medium ">
+        <label htmlFor="message" className="block pb-2 text-xs font-medium ">
           Message
         </label>
         <textarea
           name="message"
           id="message"
           rows={4}
-          className=" border border-gray-400   text-sm rounded-lg block w-full p-2.5 bg-transparent"
-          placeholder={`Hi, Tugba!
+          className=" border border-gray-400   text-xs rounded-lg block w-full p-2.5 bg-transparent"
+          placeholder={`Hi, Tugba!e
 Let's talk about...`}
         />
       </div>
@@ -89,7 +89,7 @@ Let's talk about...`}
         </span>
       </button>
       {error && (
-        <p className="text-transparent bg-clip-text bg-gradient-to-r from-[#f85b00] dark:from-[#f06e47] to-[#ff9d00] dark:to-[#ffc782] text-center sm:text-lg lg:text-xl pb-6">
+        <p className="text-transparent bg-clip-text bg-gradient-to-r from-[#f85b00] dark:from-[#f06e47] to-[#ff9d00] dark:to-[#ffc782] text-center text-xs sm:text-lg lg:text-xl pb-6">
           Oops! Something went wrong while processing your request. Please check
           your information and try again. If the issue persists, feel free to
           contact me directly at{" "}
@@ -98,12 +98,13 @@ Let's talk about...`}
         </p>
       )}
       {success && (
-        <p className="text-transparent bg-clip-text bg-gradient-to-r from-[#F8A000] dark:from-[#F0BE47] to-[#FFC500] dark:to-[#FFE182] text-center sm:text-lg lg:text-xl pb-6">
+        <p className="text-transparent bg-clip-text bg-gradient-to-r from-[#F8A000] dark:from-[#F0BE47] to-[#FFC500] dark:to-[#FFE182] text-xs text-center sm:text-lg lg:text-xl pb-6">
           Thank you so much for reaching out! <br />I will get back to you
           shortly.
         </p>
       )}
     </form>
+
   );
 };
 

@@ -98,7 +98,7 @@ const HeroSection = () => {
           </motion.div>
         </motion.div>
       </div>
-      <div className="-z-1 text-7xl lg:text-[140px] absolute bottom-[20%] lg:bottom-[10%] right-0 left-0 text-center opacity-40 font-extrabold">
+      <div className="-z-1 text-5xl md:text-7xl lg:text-[140px] absolute bottom-10 lg:bottom-[10%] right-0 left-0 text-center opacity-40 font-extrabold">
         <TypeAnimation
           sequence={[
             "Engineer",

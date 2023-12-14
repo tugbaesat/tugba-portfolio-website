@@ -18,7 +18,7 @@ const Parallax = ({ type }) => {
         type === "about"
           ? "bg-gradient-to-b from-[#dccccc] to-[#f1eaea]  dark:to-[#001b1d] dark:from-[#002f32]"
           : "bg-gradient-to-b to-[#dccccc] from-[#f1eaea]  dark:from-[#001b1d] dark:to-[#002f32]"
-      } w-full h-full relative flex justify-center items-center overflow-hidden`}
+      } w-full h-screen relative text-center flex justify-center items-center overflow-hidden`}
     >
       <motion.h1 style={{ y: yText }} className="pb-40 text-7xl lg:text-8xl">
         {type === "about" ? "Who Am I?" : "What I Did?"}

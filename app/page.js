@@ -22,9 +22,9 @@ export default function Home() {
         <Parallax type="portfolio" />
       </section>
       <Portfolio />
-      <section id="contact">  
+      <section id="contact">
         <Contact />
-        <Footer/>
+        <Footer />
       </section>
     </main>
   );

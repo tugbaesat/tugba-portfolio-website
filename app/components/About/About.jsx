@@ -43,20 +43,20 @@ const About = () => {
       initial="initial"
       ref={ref}
       animate={isInView && "animate"}
-      className=" pt-[120px] h-screen bg-gradient-to-b to-[#dccccc] from-[#f1eaea]  dark:from-[#001b1d] dark:to-[#002f32] overflow-hidden flex flex-col justify-center items-center text-center gap-4 lg:gap-10"
+      className=" pt-[120px] h-screen bg-gradient-to-b to-[#dccccc] from-[#f1eaea]  dark:from-[#001b1d] dark:to-[#002f32] overflow-hidden flex flex-col justify-center items-center text-center gap-2 md:gap-10"
     >
-      <motion.div variants={variants} className="flex flex-col lg:flex-row items-center justify-center gap-6">
+      <motion.div variants={variants} className="flex flex-col md:flex-row items-center justify-center md:gap-4">
         <Image
           src={pc}
           alt="old computer image"
-          className="object-cover w-full h-auto lg:w-40 lg:h-20 rounded-3xl "
+          className="object-cover w-60 md:w-40 md:h-20 rounded-3xl "
         />
-        <h2 className="text-4xl lg:text-7xl text-transparent bg-clip-text bg-gradient-to-r from-[#F8A000] dark:from-[#F0BE47] to-[#FFC500] dark:to-[#FFE182] text-center">
+        <h2 className="text-3xl md:text-7xl text-transparent bg-clip-text bg-gradient-to-r from-[#F8A000] dark:from-[#F0BE47] to-[#FFC500] dark:to-[#FFE182] text-center">
           {" "}
           <b>About </b> Me
         </h2>
       </motion.div>
-      <motion.p variants={variants} className="w-full px-4 lg:w-1/2 text-center sm:text-lg lg:text-xl mb-6">
+      <motion.p variants={variants} className="w-full px-4 lg:w-1/2 text-center text-xs md:text-xl">
         I am a web developer with a strong engineering background, offering a
         unique mix of technical proficiency and creative problem-solving skills.
         I am passionate about creating seamless, user-friendly websites and
@@ -64,11 +64,11 @@ const About = () => {
         engineering foundation.
       </motion.p>
       <motion.div variants={variants}>
-        <h3 className="text-xl lg:text-4xl text-transparent bg-clip-text bg-gradient-to-r from-[#F8A000] dark:from-[#F0BE47] to-[#FFC500] dark:to-[#FFE182] text-center mb-4">
+        <h3 className="text-xl md:text-4xl text-transparent bg-clip-text bg-gradient-to-r from-[#F8A000] dark:from-[#F0BE47] to-[#FFC500] dark:to-[#FFE182] text-center py-2">
           Tech Stack
         </h3>
 
-        <div className="flex flex-col md:flex-row px-6 gap-2 mt-8 text-left">
+        <div className="flex flex-col md:flex-row px-6 gap-2 text-left">
           {TAB_DATA.map((tabData) => (
             <TabButton
               key={tabData.id}

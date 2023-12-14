@@ -24,7 +24,7 @@ body {
   }
 }
 section {
-  height: 100vh;
+  min-height: 100vh;
   scroll-snap-align: center;
 }
 
@@ -78,4 +78,18 @@ a {
   .textContainer {
     transform: none !important;
   }
+}
+.textarea {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  resize: both;
+  min-height: 40px;
+  line-height: 20px;
+  border: #001b1d;
+}
+
+.textarea[contenteditable]:empty::before {
+  content: "Placeholder still possible";
+  color: gray;
 }
