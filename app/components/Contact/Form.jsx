@@ -5,6 +5,8 @@ import emailjs from "@emailjs/browser";
 const Form = () => {
   const [error, setError] = useState(false);
   const [success, setSuccess] = useState(false);
+  const formRef = useRef();
+
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -26,7 +28,7 @@ const Form = () => {
       );
   };
   return (
-    <form className="flex flex-col text-left " onSubmit={sendEmail}>
+    <form className="flex flex-col text-left" ref={formRef} onSubmit={sendEmail}>
       <div className="pb-6">
         <label className="block pb-2 text-xs font-medium  " htmlFor="name">
           Name
