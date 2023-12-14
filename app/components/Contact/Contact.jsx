@@ -63,8 +63,9 @@ const Contact = () => {
       variants={variants}
       initial="initial"
       animate={isInView ? "animate" : "initial"}
-      className="lg:pt-0 pt-24 h-full lg:flex lg:flex-row lg:items-center lg:gap-10 bg-gradient-to-b to-[#dccccc] from-[#f1eaea]  dark:from-[#001b1d] dark:to-[#002f32] overflow-hidden flex flex-col justify-center items-center text-center gap-2"
+      className="pt-12 w-full h-full  bg-gradient-to-b to-[#dccccc] from-[#f1eaea]  dark:from-[#001b1d] dark:to-[#002f32] overflow-hidden"
     >
+      <motion.div variants={variants} className="flex flex-col justify-start items-center text-center gap-2  lg:flex-row w-full  lg:gap-10 pb-24">
       <motion.div
         variants={variants}
         className="flex flex-col flex-1 px-6 gap-2 md:gap-10 text-center lg:text-left md:pt-20"
@@ -75,7 +76,7 @@ const Contact = () => {
         >
           Let&apos;s Connect
         </motion.h2>
-        <motion.p variants={variants} className="text-xs lg:max-w-lg">
+        <motion.p variants={variants} className="text-xs md:text-lg lg:max-w-lg">
           Feel free to reach out—I&apos;m always open to new opportunities and
           collaborations.
         </motion.p>
@@ -90,7 +91,7 @@ const Contact = () => {
           .{" "}
         </motion.p> */}
         <motion.div variants={variants} className="">
-        <motion.p variants={variants} className="text-xs max-w-lg">
+        <motion.p variants={variants} className="text-xs  md:text-lg lg:max-w-lg">
           Let&apos;s connect on social media:{" "}
         </motion.p>
         <motion.div
@@ -129,6 +130,8 @@ const Contact = () => {
         </AnimatePresence>
         <Form />
       </motion.div>
+      </motion.div>
+     
       <Footer />
     </motion.div>
   );

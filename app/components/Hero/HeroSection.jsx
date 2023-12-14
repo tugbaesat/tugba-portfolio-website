@@ -45,8 +45,8 @@ const variants = {
 
 const HeroSection = () => {
   return (
-    <div className=" pt-[100px] h-screen bg-gradient-to-b to-[#dccccc] from-[#f1eaea]  dark:from-[#001b1d] dark:to-[#002f32] overflow-hidden ">
-      <div className="flex flex-col justify-evenly items-center lg:flex-row text-center">
+    <div className=" pt-[100px] h-screen bg-gradient-to-b to-[#dccccc] from-[#f1eaea]  dark:from-[#001b1d] dark:to-[#002f32] overflow-hidden">
+      <div className="flex flex-col justify-evenly items-center lg:flex-row text-center gap-6">
         <motion.div
           variants={variants}
           initial="initial"
@@ -59,7 +59,7 @@ const HeroSection = () => {
           variants={textVariants}
           initial="initial"
           animate="animate"
-          className="flex flex-col items-center gap-12 lg:gap-6 z-10"
+          className="flex flex-col items-center gap-6 z-10"
         >
           <motion.h1
             variants={textVariants}
