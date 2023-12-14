@@ -24,7 +24,6 @@ export default function Home() {
       <Portfolio />
       <section id="contact">
         <Contact />
-        <Footer />
       </section>
     </main>
   );

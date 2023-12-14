@@ -6,6 +6,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import Form from "./Form";
 import GithubIcon from "../../../public/github.svg";
 import LinkedinIcon from "../../../public/linkedin.svg";
+import Footer from "../Footer/Footer";
 
 const variants = {
   initial: { x: -100, opacity: 0 },
@@ -62,7 +63,7 @@ const Contact = () => {
       variants={variants}
       initial="initial"
       animate={isInView ? "animate" : "initial"}
-      className="lg:pt-0 py-20 h-full lg:flex lg:flex-row lg:items-center lg:gap-10 bg-gradient-to-b to-[#dccccc] from-[#f1eaea]  dark:from-[#001b1d] dark:to-[#002f32] overflow-hidden flex flex-col justify-center items-center text-center gap-2"
+      className="lg:pt-0 pt-24 h-full lg:flex lg:flex-row lg:items-center lg:gap-10 bg-gradient-to-b to-[#dccccc] from-[#f1eaea]  dark:from-[#001b1d] dark:to-[#002f32] overflow-hidden flex flex-col justify-center items-center text-center gap-2"
     >
       <motion.div
         variants={variants}
@@ -88,7 +89,7 @@ const Contact = () => {
           </a>
           .{" "}
         </motion.p> */}
-        <motion.div variants={variants} className="flex items-center justify-evenly">
+        <motion.div variants={variants} className="">
         <motion.p variants={variants} className="text-xs max-w-lg">
           Let&apos;s connect on social media:{" "}
         </motion.p>
@@ -97,10 +98,10 @@ const Contact = () => {
           className=" flex flex-row gap-2 items-center justify-center lg:justify-start"
         >
           <Link href="https://github.com/tugbaesat">
-            <Image src={GithubIcon} alt="Github Icon" className="md:w-3/4 w-6 lg:w-full"/>
+            <Image src={GithubIcon} alt="Github Icon" className="w-3/4 lg:w-full"/>
           </Link>
           <Link href="https://www.linkedin.com/in/tugbaesat/">
-            <Image src={LinkedinIcon} alt="Linkedin Icon" className="w-6 md:w-3/4 lg:w-full"/>
+            <Image src={LinkedinIcon} alt="Linkedin Icon" className="w-3/4 lg:w-full"/>
           </Link>
         </motion.div>
         </motion.div>
@@ -109,7 +110,7 @@ const Contact = () => {
       <motion.div className="flex-1 w-full px-6 items-center justify-center  lg:pt-[100px] relative">
         <AnimatePresence>
           {isInView && (
-            <div className=" justify-center items-center hidden md:flex">
+            <div className=" justify-center items-center flex">
               <div className="w-1/3">
                 <svg viewBox="0 0 64 38" fill="none">
                   <motion.path
@@ -128,6 +129,7 @@ const Contact = () => {
         </AnimatePresence>
         <Form />
       </motion.div>
+      <Footer />
     </motion.div>
   );
 };
