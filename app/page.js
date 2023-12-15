@@ -7,7 +7,7 @@ import Parallax from "./components/Parallax/Parallax";
 import Portfolio from "./components/Portfolio/Portfolio";
 export default function Home() {
   return (
-    <main className="bg-[#f1eaea] dark:bg-[#001b1d] h-screen">
+    <main className="bg-[#f1eaea] dark:bg-[#001b1d]">
       <section id="home">
         <Navbar />
         <HeroSection />

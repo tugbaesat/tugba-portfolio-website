@@ -91,7 +91,7 @@ Let's talk about...`}
         </span>
       </button>
       {error && (
-        <p className="text-transparent bg-clip-text bg-gradient-to-r from-[#f85b00] dark:from-[#f06e47] to-[#ff9d00] dark:to-[#ffc782] text-center text-xs sm:text-lg lg:text-xl pb-6">
+        <p className="text-transparent bg-clip-text bg-gradient-to-r from-[#f85b00] dark:from-[#f06e47] to-[#ff9d00] dark:to-[#ffc782] text-center text-xs sm:text-lg lg:text-xl py-6">
           Oops! Something went wrong while processing your request. Please check
           your information and try again. If the issue persists, feel free to
           contact me directly at{" "}
@@ -100,7 +100,7 @@ Let's talk about...`}
         </p>
       )}
       {success && (
-        <p className="text-transparent bg-clip-text bg-gradient-to-r from-[#F8A000] dark:from-[#F0BE47] to-[#FFC500] dark:to-[#FFE182] text-xs text-center sm:text-lg lg:text-xl pb-6">
+        <p className="text-transparent bg-clip-text bg-gradient-to-r from-[#F8A000] dark:from-[#F0BE47] to-[#FFC500] dark:to-[#FFE182] text-xs text-center sm:text-lg lg:text-xl py-6">
           Thank you so much for reaching out! <br />I will get back to you
           shortly.
         </p>
