@@ -26,6 +26,7 @@ import clipboard from "../../public/projects/clipboard-landing.jpg";
 import blogr from "../../public/projects/blogr-landing.jpg";
 // import reactForm from "../../public/projects/react-form-app.jpg";
 import space from "../../public/projects/space.jpg";
+import portfolio from "../../public/projects/portfolio.jpg";
 
 const skillsImages = {
   React: react,
@@ -153,6 +154,20 @@ const skillsData = [
 ];
 
 const projectsData = [
+  {
+    id:"portfolio",
+    title:"Portfolio Showcase - Personal Website",
+    description:"This project is my personal portfolio website, providing visitors with the opportunity to download my CV, learn more about me, explore my projects, and easily get in touch. This personal portfolio website serves as a showcase of my skills, projects, and professional journey, providing a comprehensive overview for anyone interested in learning more about me.",
+    image:portfolio,
+    gitUrl:"https://github.com/tugbaesat/portfolio-tugba",
+    previewUrl:"https://tugbaesat.vercel.app",
+    skills: [
+      skillsImages.React,
+      skillsImages.Nextjs,
+      skillsImages.Tailwind,
+      
+    ],
+  },
   {
     id: "learnification",
     title: "Learnification - Education Hub",
