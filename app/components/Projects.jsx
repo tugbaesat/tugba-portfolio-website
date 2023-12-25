@@ -27,6 +27,7 @@ import blogr from "../../public/projects/blogr-landing.jpg";
 // import reactForm from "../../public/projects/react-form-app.jpg";
 import space from "../../public/projects/space.jpg";
 import portfolio from "../../public/projects/portfolio.jpg";
+import easybank from "../../public/projects/bank-landing.png";
 
 const skillsImages = {
   React: react,
@@ -155,24 +156,20 @@ const skillsData = [
 
 const projectsData = [
   {
-    id:"portfolio",
-    title:"Portfolio Showcase - Personal Website",
-    description:"This project is my personal portfolio website, providing visitors with the opportunity to download my CV, learn more about me, explore my projects, and easily get in touch. This personal portfolio website serves as a showcase of my skills, projects, and professional journey, providing a comprehensive overview for anyone interested in learning more about me.",
-    image:portfolio,
-    gitUrl:"https://github.com/tugbaesat/portfolio-tugba",
-    previewUrl:"https://tugbaesat.vercel.app",
-    skills: [
-      skillsImages.React,
-      skillsImages.Nextjs,
-      skillsImages.Tailwind,
-      
-    ],
+    id: "portfolio",
+    title: "Portfolio Showcase - Personal Website",
+    description:
+      "This project is my first personal portfolio website, providing visitors with the opportunity to download my CV, learn more about me, explore my projects, and easily get in touch. This personal portfolio website serves as a showcase of my skills, projects, and professional journey, providing a comprehensive overview for anyone interested in learning more about me.",
+    image: portfolio,
+    gitUrl: "https://github.com/tugbaesat/portfolio-tugba",
+    previewUrl: "https://tugbaesat.vercel.app",
+    skills: [skillsImages.React, skillsImages.Nextjs, skillsImages.Tailwind],
   },
   {
     id: "learnification",
     title: "Learnification - Education Hub",
     description:
-      "The project revolves around crafting an interactive learning application that caters to users of diverse ages and skill levels. It aims to offer abroad spectrum of courses across various subjects, ensuring an engaging and enriching educational experience.",
+      "The project, serving as the capstone project of the Re:Coded Frontend Web Development Bootcamp, revolves around crafting a interactive learning application that caters to users of diverse ages and skill levels. It aims to offer abroad spectrum of courses across various subjects, ensuring an engaging and enriching educational experience.",
     image: learningApp,
     gitUrl: "https://github.com/tugbaesat/Learnification",
     previewUrl: "https://learn-u-team-7.vercel.app/",
@@ -223,7 +220,7 @@ const projectsData = [
     id: "nomination",
     title: "Oscars - Movie Nomination Platform",
     description:
-      "The project centers around the creation of a Next.js-based webpage, drawing inspiration from theShopify Web Developer Intern Challenge Summer 2021. It's aimed at enabling users to search theOMDB for movies and nominate their top choices. The primary focus is on crafting a seamless userexperience for discovering, selecting, and managing nominated movies.",
+      "The project centers around the creation of a Next.js-based webpage, drawing inspiration from the Shopify Web Developer Intern Challenge Summer 2021. It's aimed at enabling users to search theOMDB for movies and nominate their top choices. The primary focus is on crafting a seamless userexperience for discovering, selecting, and managing nominated movies.",
     image: movieNomination,
     gitUrl: "https://github.com/tugbaesat/movie-nomination",
     previewUrl: "https://movie-nomination.vercel.app",
@@ -245,7 +242,7 @@ const projectsData = [
     id: "space",
     title: "Space Tourism Platform",
     description:
-      "The project involves creating a comprehensive platform for space tourism enthusiasts, providingengaging and informative content about space travel opportunities. Users will access multi-pagecontent, mirroring a professional design layout for an immersive experience.",
+      "The project involves creating a comprehensive platform for space tourism enthusiasts, providing engaging and informative content about space travel opportunities. Users will access multi-pagecontent, mirroring a professional design layout for an immersive experience.",
     image: space,
     gitUrl: "https://github.com/tugbaesat/space-tourism-website",
     previewUrl: "https://space-tourism-website-tugbaesat.vercel.app",
@@ -281,13 +278,13 @@ const projectsData = [
     id: "simon",
     title: "Simon Game",
     description:
-      "The Simon Game is an online adaptation of the classic electronic game involving sequences of lightsand sounds. Players engage by replicating random light sequences by pressing colored lenses in thecorrect order. It's a fast-paced game that challenges players with its combination of lights, sounds,and sequence recall.",
+      "The Simon Game is an online adaptation of the classic electronic game involving sequences of lights and sounds. Players engage by replicating random light sequences by pressing colored lenses in thecorrect order. It's a fast-paced game that challenges players with its combination of lights, sounds, and sequence recall.",
     image: simon,
     gitUrl: "https://github.com/tugbaesat/simon-game",
     previewUrl: "https://simon-game-tugbaesat.vercel.app/",
     propertyTitles: ["Technology Stack"],
     properties: [
-      "Developed using HTML, CSS, and jQuery, the project focuses on building anengaging and interactive online version of the Simon Game, offering players an immersiveexperience of the classic electronic game's challenges and excitement.",
+      "Developed using HTML, CSS, and jQuery, the project focuses on building anengaging and interactive online version of the Simon Game, offering players an immersive experience of the classic electronic game's challenges and excitement.",
     ],
     skills: [
       skillsImages.HTML,
@@ -352,7 +349,7 @@ const projectsData = [
     id: "blogr",
     title: "Blogr Landing Page",
     description:
-      "The Blogr Landing Page, sourced from Frontend Mentor, is aimed at replicating a specific landingpage layout with a strong emphasis on responsiveness. The primary objective is to closely match theprovided design, ensuring seamless functionality across various screen sizes.",
+      "The Blogr Landing Page, sourced from Frontend Mentor, is aimed at replicating a specific landing page layout with a strong emphasis on responsiveness. The primary objective is to closely match theprovided design, ensuring seamless functionality across various screen sizes.",
     image: blogr,
     gitUrl: "https://github.com/tugbaesat/landing-page-challenge",
     previewUrl: "https://blogr-landing-page-tugbaesat.vercel.app",
@@ -361,6 +358,20 @@ const projectsData = [
       "Developed using HTML, CSS, and Bootstrap, the project underscoresaccuracy in design replication and responsiveness. The inclusion of Bootstrap further enhancesthe adaptability of the landing page, ensuring effective adjustments across different devices andscreen sizes.",
     ],
     skills: [skillsImages.HTML, skillsImages.CSS, skillsImages.Bootstrap],
+  },
+  {
+    id: "easybank",
+    title: "Easybank Landing Page",
+    description:
+      "The Easybank Landing Page, sourced from Frontend Mentor, is designed to replicate a specific landing page layout with a strong emphasis on responsiveness. The primary goal is to closely matchthe provided design, ensuring it functions seamlessly across various screen sizes.",
+    image: easybank,
+    gitUrl: "https://github.com/tugbaesat/bank-landing-page",
+    previewUrl: "https://bank-landing-page-tugbaesat.vercel.app",
+    propertyTitles: ["Technology Stack"],
+    properties: [
+      "Developed using HTML and CSS, the project emphasizes not only accuracy in design replication but also responsiveness, ensuring the landing page adjusts effectively across different devices and screen sizes.",
+    ],
+    skills: [skillsImages.HTML, skillsImages.CSS, skillsImages.JavaScript],
   },
   // {
   //   id: "react-form",
