@@ -65,10 +65,10 @@ const Contact = () => {
       animate={isInView ? "animate" : "initial"}
       className="pt-12 w-full h-full  bg-gradient-to-b from-[#dccccc] to-[#f1eaea]  dark:from-[#001b1d] dark:to-[#002f32] overflow-hidden"
     >
-      <motion.div variants={variants} className="flex flex-col justify-start items-center text-center gap-2  lg:flex-row w-full  lg:gap-10 pb-24">
+      <motion.div variants={variants} className="flex flex-col items-center justify-start w-full gap-2 pb-24 text-center lg:flex-row lg:gap-10">
       <motion.div
         variants={variants}
-        className="flex flex-col flex-1 px-6 gap-2 md:gap-10 text-center lg:text-left md:pt-20"
+        className="flex flex-col flex-1 gap-2 px-6 text-center md:gap-10 lg:text-left md:pt-20"
       >
         <motion.h2
           variants={variants}
@@ -83,7 +83,7 @@ const Contact = () => {
         {/* <motion.p variants={variants} className="text-xs lg:max-w-lg">
           You can use the form to contact me or reach out directly at{" "}
           <a
-            className="underline text-blue-400"
+            className="text-blue-400 underline"
             href="mailto:tugbaesatsahin@gmail.com"
           >
             tugbaesatsahin@gmail.com
@@ -91,12 +91,12 @@ const Contact = () => {
           .{" "}
         </motion.p> */}
         <motion.div variants={variants} className="">
-        <motion.p variants={variants} className="text-xs  md:text-lg lg:max-w-lg">
+        <motion.p variants={variants} className="text-xs md:text-lg lg:max-w-lg">
           Let&apos;s connect on social media:{" "}
         </motion.p>
         <motion.div
           variants={variants}
-          className=" flex flex-row gap-2 items-center justify-center lg:justify-start"
+          className="flex flex-row items-center justify-center gap-2 lg:justify-start"
         >
           <Link href="https://github.com/tugbaesat">
             <Image src={GithubIcon} alt="Github Icon" className="w-3/4 lg:w-full"/>
@@ -111,7 +111,7 @@ const Contact = () => {
       <motion.div className="flex-1 w-full px-6 items-center justify-center  lg:pt-[100px] relative">
         <AnimatePresence>
           {isInView && (
-            <div className=" justify-center items-center flex">
+            <div className="flex items-center justify-center ">
               <div className="w-1/3">
                 <svg viewBox="0 0 64 38" fill="none">
                   <motion.path
