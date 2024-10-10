@@ -10,7 +10,7 @@ const AnimatedLink = ({ href, title }) => {
       <motion.div
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
-        className="relative cursor-pointer uppercase overflow-hidden text-sm"
+        className="relative overflow-hidden text-sm font-bold uppercase cursor-pointer"
       >
         <AnimatedWord
           title={title}
@@ -79,7 +79,7 @@ const AnimatedWord = ({ title, animation, isHovered, href }) => {
       variants={titleAnimation}
       initial="rest"
       animate={isHovered ? "hover" : "rest"}
-      className="relative whitespace-nowrap tracking-wide "
+      className="relative tracking-wide whitespace-nowrap "
     >
       {title.split("").map((char, index) =>
         char === " " ? (
@@ -87,7 +87,7 @@ const AnimatedWord = ({ title, animation, isHovered, href }) => {
         ) : (
           <motion.span
             variants={animation}
-            className="relative inline-block whitespace-nowrap tracking-wide "
+            className="relative inline-block tracking-wide whitespace-nowrap "
             key={index}
           >
             {char}

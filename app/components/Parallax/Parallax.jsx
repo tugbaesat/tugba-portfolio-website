@@ -16,16 +16,16 @@ const Parallax = ({ type }) => {
       ref={ref}
       className={`${
         type === "about"
-          ? "bg-gradient-to-b from-[#dccccc] to-[#f1eaea]  dark:to-[#001b1d] dark:from-[#002f32]"
-          : "bg-gradient-to-b to-[#dccccc] from-[#f1eaea]  dark:from-[#001b1d] dark:to-[#002f32]"
+          ? "bg-gradient-to-b from-dark-secondary-bg to-dark-primary-bg "
+          : "bg-gradient-to-b to-dark-secondary-bg from-dark-primary-bg "
       } w-full h-screen py-20 relative  text-center flex justify-center items-center overflow-hidden`}
     >
       <motion.h1 style={{ y: yText }} className="pb-40 text-7xl lg:text-8xl">
         {type === "about" ? "Who Am I?" : "What I Did?"}
       </motion.h1>
-      <motion.div className="mountains bg-contain bg-no-repeat md:bg-cover bg-bottom w-full h-full absolute"></motion.div>
+      <motion.div className="absolute w-full h-full bg-bottom bg-no-repeat bg-contain mountains md:bg-cover"></motion.div>
       <motion.div
-        className="planets bg-contain bg-no-repeat md:bg-cover bg-center w-full h-full absolute"
+        className="absolute w-full h-full bg-center bg-no-repeat bg-contain planets md:bg-cover"
         style={{
           y: yBg,
           backgroundImage: `url(${
@@ -33,7 +33,7 @@ const Parallax = ({ type }) => {
           })`,
         }}
       ></motion.div>
-      <motion.div style={{ x: yText }} className="stars  bg-no-repeat bg-cover bg-center w-full h-full absolute"></motion.div>
+      <motion.div style={{ x: yText }} className="absolute w-full h-full bg-center bg-no-repeat bg-cover stars"></motion.div>
     </div>
   );
 };

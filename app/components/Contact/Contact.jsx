@@ -63,7 +63,7 @@ const Contact = () => {
       variants={variants}
       initial="initial"
       animate={isInView ? "animate" : "initial"}
-      className="pt-12 w-full h-full  bg-gradient-to-b from-[#dccccc] to-[#f1eaea]  dark:from-[#001b1d] dark:to-[#002f32] overflow-hidden"
+      className="w-full h-full pt-20 overflow-hidden md:pt-12 bg-gradient-to-b from-dark-secondary-bg to-dark-primary-bg"
     >
       <motion.div variants={variants} className="flex flex-col items-center justify-start w-full gap-2 pb-24 text-center lg:flex-row lg:gap-10">
       <motion.div

@@ -30,7 +30,7 @@ const MobileNavLink = ({ open, setOpen, navLinks }) => {
   return (
     <motion.div
       variants={variants}
-      className="absolute flex flex-col justify-center items-center gap-10 w-full h-full uppercase"
+      className="absolute flex flex-col items-center justify-center w-full h-full gap-10 uppercase text-dark-primary-text"
     >
       {navLinks.map((link) => (
         <a key={link.id} href={link.path}>

@@ -45,7 +45,7 @@ const variants = {
 
 const HeroSection = () => {
   return (
-    <div className=" pt-[100px] h-screen bg-gradient-to-b to-[#dccccc] from-[#f1eaea]  dark:from-[#001b1d] dark:to-[#002f32] overflow-hidden">
+    <div className=" pt-[100px] h-screen bg-gradient-to-b to-dark-secondary-bg from-dark-primary-bg  overflow-hidden">
       <div className="flex flex-col items-center gap-6 text-center justify-evenly lg:flex-row">
         <motion.div
           variants={variants}
@@ -63,23 +63,26 @@ const HeroSection = () => {
         >
           <motion.h1
             variants={textVariants}
-            className="mb-4 text-4xl font-extrabold sm:text-5xl lg:text-6xl text-transparent bg-clip-text bg-gradient-to-r from-[#F8A000] dark:from-[#F0BE47] to-[#FFC500] dark:to-[#FFE182] uppercase"
+            className="mb-4 text-4xl font-extrabold text-transparent uppercase sm:text-5xl lg:text-6xl bg-clip-text bg-gradient-to-r from-brand-primary to-brand-secondary"
           >
             Hello, I&apos;m Tugba!
           </motion.h1>
           <motion.p variants={textVariants} className="mb-6">
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#F8A000] dark:from-[#F0BE47] to-[#FFC500] dark:to-[#FFE182] text-center sm:text-lg lg:text-xl  uppercase">
+            <span className="text-center text-transparent uppercase bg-clip-text bg-gradient-to-r from-brand-primary to-brand-secondary sm:text-lg lg:text-xl">
               web developer <br />
             </span>
-            📍 <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#F8A000] dark:from-[#F0BE47] to-[#FFC500] dark:to-[#FFE182] text-center sm:text-lg lg:text-xl  uppercase">Los Angeles, CA</span> 
+            📍{" "}
+            <span className="text-center text-transparent uppercase bg-clip-text bg-gradient-to-r from-brand-primary to-brand-secondary sm:text-lg lg:text-xl">
+              Los Angeles, CA
+            </span>
           </motion.p>
           <motion.div variants={textVariants} className="flex">
             <a href="#portfolio">
               <motion.button
                 variants={textVariants}
-                className="w-40 lg:w-64 items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden font-medium rounded-full group bg-gradient-to-br from-[#F8A000] dark:from-[#F0BE47] to-[#FFC500] dark:to-[#FFE182] text-[#f1eaea]  dark:text-[#001b1d]"
+                className="w-40 lg:w-64 items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden font-medium rounded-full group bg-gradient-to-br from-brand-primary to-brand-secondary text-light-primary-text"
               >
-                <motion.span className="block p-5 transition-all duration-75 ease-in bg-[#FFE182] bg-opacity-0 rounded-full group-hover:bg-opacity-40">
+                <motion.span className="block p-5 transition-all duration-75 ease-in bg-opacity-0 rounded-full bg-gradient-to-br from-brand-primary to-brand-secondary group-hover:bg-opacity-40">
                   Latest Works
                 </motion.span>
               </motion.button>
@@ -87,9 +90,9 @@ const HeroSection = () => {
             <a href="https://drive.google.com/file/d/1DA7l5RIx3jcJt7CQstkZp6dyF3s2a4lL/view?usp=drive_link">
               <motion.button
                 variants={textVariants}
-                className="w-40 lg:w-64 items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden font-medium rounded-full group bg-gradient-to-br from-[#F8A000] dark:from-[#F0BE47] to-[#FFC500] dark:to-[#FFE182] text-[#f1eaea]  dark:text-[#001b1d]"
+                className="w-40 lg:w-64 items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden font-medium rounded-full group bg-gradient-to-br from-brand-primary to-brand-secondary text-light-primary-text"
               >
-                <motion.span className="block p-5 transition-all duration-75 ease-in bg-[#FFE182] bg-opacity-0 rounded-full group-hover:bg-opacity-40">
+                <motion.span className="block p-5 transition-all duration-75 ease-in bg-opacity-0 rounded-full bg-gradient-to-br from-brand-primary to-brand-secondary group-hover:bg-opacity-40">
                   Resumé
                 </motion.span>
               </motion.button>

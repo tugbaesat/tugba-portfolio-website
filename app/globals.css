@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --dark-bg: #17133A;
+  --dark-primary-text: #f2f2f2;
+  --dark-secondary-text: #999999;
+  --brand-primary: #55A9B9;
+  --font-roboto: "Roboto", sans-serif;
+  --font-raleway: "Raleway", sans-serif;
+  --font-advent-pro: "Advent Pro", sans-serif;
+}
+
 html {
   scroll-snap-type:y mandatory;
   scroll-behavior:smooth;
@@ -14,15 +24,26 @@ html {
 }
 
 body {
-  color: #494949;
-  background-color: #dccccc;
+  background-color: var(--dark-bg);
+  color: var(--dark-primary-text);
+  font-family: var(--font-roboto);
 }
-@media (prefers-color-scheme: dark) {
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--dark-primary-text);
+  font-family: var(--font-advent-pro);
+}
+/* @media (prefers-color-scheme: dark) {
   body {
     color: #dedede;
     background-color: #001b1d;
   }
-}
+} */
 section {
   height: 100vh;
   scroll-snap-align: center;
