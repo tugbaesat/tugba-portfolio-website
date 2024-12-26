@@ -30,7 +30,7 @@ const Form = () => {
   return (
     <form className="flex flex-col text-left" ref={formRef} onSubmit={sendEmail}>
       <div className="pb-6">
-        <label className="block pb-2 text-xs font-medium  " htmlFor="name">
+        <label className="block pb-2 text-xs font-medium " htmlFor="name">
           Name
         </label>
         <input
@@ -56,7 +56,7 @@ const Form = () => {
         />
       </div>
       <div className="pb-6">
-        <label className="block pb-2 text-xs font-medium  " htmlFor="subject">
+        <label className="block pb-2 text-xs font-medium " htmlFor="subject">
           Subject
         </label>
         <input
@@ -77,7 +77,7 @@ const Form = () => {
           id="message"
           rows={4}
           className=" border border-gray-400   text-xs rounded-lg block w-full p-2.5 bg-transparent"
-          placeholder={`Hi, Tugba!
+          placeholder={`Hi, Tess!
 Let's talk about...`}
         />
       </div>
@@ -95,7 +95,7 @@ Let's talk about...`}
           Oops! Something went wrong while processing your request. Please check
           your information and try again. If the issue persists, feel free to
           contact me directly at{" "}
-          <a href="mailto:tugbaesatsahin@gmail.com">tugbaesatsahin@gmail.com</a>{" "}
+          <a href="mailto:tessevansofficial@gmail.com">tessevansofficial@gmail.com</a>{" "}
           .
         </p>
       )}

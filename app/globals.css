@@ -3,18 +3,18 @@
 @tailwind utilities;
 
 :root {
-  --dark-bg: #17133A;
+  --dark-bg: #17133a;
   --dark-primary-text: #f2f2f2;
   --dark-secondary-text: #999999;
-  --brand-primary: #55A9B9;
+  --brand-primary: #55a9b9;
   --font-roboto: "Roboto", sans-serif;
   --font-raleway: "Raleway", sans-serif;
   --font-advent-pro: "Advent Pro", sans-serif;
 }
 
 html {
-  scroll-snap-type:y mandatory;
-  scroll-behavior:smooth;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
 }
 
 * {
@@ -95,7 +95,7 @@ a {
   opacity: 0.5;
 }
 
-@media  (max-width: 738px) {
+@media (max-width: 738px) {
   .textContainer {
     transform: none !important;
   }

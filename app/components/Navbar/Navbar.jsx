@@ -35,7 +35,7 @@ const navLinks = [
 
 const Navbar = () => {
   return (
-    <nav className="fixed top-0 left-0 right-0 z-20 flex justify-between md:items-center">
+    <nav className="fixed top-0 left-0 right-0 z-20 flex justify-between md:justify-center md:items-center">
       <MobileNavbar navLinks={navLinks} />
       <motion.div
         className="p-6"
@@ -43,9 +43,9 @@ const Navbar = () => {
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.7 }}
       >
-        <Link href={"/"} className="text-4xl font-semibold text-transparent md:text-5xl bg-clip-text bg-gradient-to-r from-brand-primary to-brand-secondary">
+        {/* <Link href={"/"} className="text-4xl font-semibold text-transparent md:text-5xl bg-clip-text bg-gradient-to-r from-brand-primary to-brand-secondary">
           TUGBA
-        </Link>
+        </Link> */}
       </motion.div>
       <DesktopNavbar navLinks={navLinks} />
     </nav>

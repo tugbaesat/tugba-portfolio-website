@@ -47,14 +47,14 @@ const HeroSection = () => {
   return (
     <div className=" pt-[100px] h-screen bg-gradient-to-b to-dark-secondary-bg from-dark-primary-bg  overflow-hidden">
       <div className="flex flex-col items-center gap-6 text-center justify-evenly lg:flex-row">
-        <motion.div
+        {/* <motion.div
           variants={variants}
           initial="initial"
           animate="animate"
           className="z-10 w-1/3"
         >
           <Image src={hero} alt="profile-picture" />
-        </motion.div>
+        </motion.div> */}
         <motion.div
           variants={textVariants}
           initial="initial"
@@ -65,7 +65,7 @@ const HeroSection = () => {
             variants={textVariants}
             className="mb-4 text-4xl font-extrabold text-transparent uppercase sm:text-5xl lg:text-6xl bg-clip-text bg-gradient-to-r from-brand-primary to-brand-secondary"
           >
-            Hello, I&apos;m Tugba!
+            Hello, it&apos;s Tess!
           </motion.h1>
           <motion.p variants={textVariants} className="mb-6">
             <span className="text-center text-transparent uppercase bg-clip-text bg-gradient-to-r from-brand-primary to-brand-secondary sm:text-lg lg:text-xl">
@@ -76,8 +76,8 @@ const HeroSection = () => {
               Los Angeles, CA
             </span>
           </motion.p>
-          <motion.div variants={textVariants} className="flex">
-            <a href="#portfolio">
+          <motion.div variants={textVariants} className="flex gap-8">
+            {/* <a href="#portfolio">
               <motion.button
                 variants={textVariants}
                 className="w-40 lg:w-64 items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden font-medium rounded-full group bg-gradient-to-br from-brand-primary to-brand-secondary text-light-primary-text"
@@ -86,8 +86,35 @@ const HeroSection = () => {
                   Latest Works
                 </motion.span>
               </motion.button>
-            </a>
-            <a href="https://drive.google.com/file/d/1DA7l5RIx3jcJt7CQstkZp6dyF3s2a4lL/view?usp=drive_link">
+            </a> */}
+
+            <div class="relative inline-flex group">
+              <div class="absolute transitiona-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-full blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt"></div>
+              <a
+                href="#portfolio"
+                class="relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white transition-all duration-200 bg-gray-900 font-pj rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
+                role="button"
+              >
+                {" "}
+                <motion.button variants={textVariants}>
+                  <motion.span>Latest Works</motion.span>
+                </motion.button>
+              </a>
+            </div>
+            <div class="relative inline-flex  group">
+              <div class="absolute transitiona-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-full blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt"></div>
+              <a
+                href="https://drive.google.com/file/d/1DA7l5RIx3jcJt7CQstkZp6dyF3s2a4lL/view?usp=drive_link"
+                class="relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white transition-all duration-200 bg-gray-900 font-pj rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
+                role="button"
+              >
+                {" "}
+                <motion.button variants={textVariants}>
+                  <motion.span> Resumé</motion.span>
+                </motion.button>
+              </a>
+            </div>
+            {/* <a href="https://drive.google.com/file/d/1DA7l5RIx3jcJt7CQstkZp6dyF3s2a4lL/view?usp=drive_link">
               <motion.button
                 variants={textVariants}
                 className="w-40 lg:w-64 items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden font-medium rounded-full group bg-gradient-to-br from-brand-primary to-brand-secondary text-light-primary-text"
@@ -96,20 +123,23 @@ const HeroSection = () => {
                   Resumé
                 </motion.span>
               </motion.button>
-            </a>
+            </a> */}
           </motion.div>
         </motion.div>
       </div>
+
       <div className="-z-1 text-5xl md:text-7xl lg:text-[140px] absolute bottom-10 lg:bottom-[10%] right-0 left-0 text-center opacity-40 font-extrabold">
         <TypeAnimation
           sequence={[
             "Engineer",
             1000,
-            "Full Stack Developer",
+            "Designer",
             1000,
             "Frontend Developer",
             1000,
             "Web Developer",
+            1000,
+            "Web Designer",
             1000,
           ]}
           wrapper="span"

@@ -1,9 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    './pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './components/**/*.{js,ts,jsx,tsx,mdx}',
-    './app/**/*.{js,ts,jsx,tsx,mdx}',
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
@@ -20,9 +20,9 @@ module.exports = {
       fontFamily: {
         sans: ["var(--font-roboto)", "sans-serif"],
         navbar: ["var(--font-raleway)", "sans-serif"],
-        heading: ['var(--font-advent-pro)', 'sans-serif'],
+        heading: ["var(--font-advent-pro)", "sans-serif"],
       },
     },
   },
   plugins: [],
-}
+};
