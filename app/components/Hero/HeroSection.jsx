@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import hero from "../../../public/tugba-hero.png";
+import hero from "../../../public/cartoon.png";
 import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
 
@@ -46,12 +46,13 @@ const variants = {
 const HeroSection = () => {
   return (
     <div className=" pt-[100px] h-screen bg-gradient-to-b to-dark-secondary-bg from-dark-primary-bg  overflow-hidden">
-      <div className="flex flex-col items-center gap-6 text-center justify-evenly lg:flex-row">
+      <div className="flex flex-col items-center gap-6 text-center justify-evenly lg:flex-row  h-[60vh] home lg:items-start">
+        <div className="absolute inset-0 bg-black opacity-50"></div>
         {/* <motion.div
           variants={variants}
           initial="initial"
           animate="animate"
-          className="z-10 w-1/3"
+          className="w-1/3 "
         >
           <Image src={hero} alt="profile-picture" />
         </motion.div> */}
@@ -59,20 +60,20 @@ const HeroSection = () => {
           variants={textVariants}
           initial="initial"
           animate="animate"
-          className="z-10 flex flex-col items-center gap-6"
+          className="z-10 flex flex-col items-center h-full gap-6 lg:justify-between"
         >
           <motion.h1
             variants={textVariants}
-            className="mb-4 text-4xl font-extrabold text-transparent uppercase sm:text-5xl lg:text-6xl bg-clip-text bg-gradient-to-r from-brand-primary to-brand-secondary"
+            className="mt-0 mb-4 text-4xl font-extrabold text-transparent uppercase sm:text-5xl lg:text-9xl bg-clip-text bg-gradient-to-r from-brand-primary to-brand-secondary"
           >
             Hello, it&apos;s Tess!
           </motion.h1>
           <motion.p variants={textVariants} className="mb-6">
-            <span className="text-center text-transparent uppercase bg-clip-text bg-gradient-to-r from-brand-primary to-brand-secondary sm:text-lg lg:text-xl">
+            <span className="text-center text-transparent uppercase bg-clip-text bg-gradient-to-r from-brand-primary to-brand-secondary sm:text-lg lg:text-5xl">
               web developer <br />
             </span>
-            📍{" "}
-            <span className="text-center text-transparent uppercase bg-clip-text bg-gradient-to-r from-brand-primary to-brand-secondary sm:text-lg lg:text-xl">
+            <span className="uppercase sm:text-lg lg:text-4xl">📍</span>
+            <span className="text-center text-transparent uppercase bg-clip-text bg-gradient-to-r from-brand-primary to-brand-secondary sm:text-lg lg:text-4xl">
               Los Angeles, CA
             </span>
           </motion.p>
@@ -127,7 +128,6 @@ const HeroSection = () => {
           </motion.div>
         </motion.div>
       </div>
-
       <div className="-z-1 text-5xl md:text-7xl lg:text-[140px] absolute bottom-10 lg:bottom-[10%] right-0 left-0 text-center opacity-40 font-extrabold">
         <TypeAnimation
           sequence={[
