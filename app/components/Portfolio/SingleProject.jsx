@@ -37,7 +37,7 @@ const SingleProject = ({
             className="flex-1 flex flex-col gap-6 lg:pt-[100px] md:pt-20 textContainer"
           >
             <h3 className="text-3xl font-bold lg:text-6xl">{title}</h3>
-            <p className="text-xs lg:text-sm">{description}</p>
+            <p className="text-xs text-justify lg:text-sm">{description}</p>
             {/* <div className="flex text-left">
               {propertyTitles && propertyTitles.length > 0 && (
                 <h5>
@@ -69,7 +69,7 @@ const SingleProject = ({
                 />
               ))}
             </div>
-            <div>
+            <div className="flex items-start justify-center">
               {/* <a href={code} className="flex w-full justify-evenly">
                 <motion.button className="w-40 items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden font-medium rounded-full group bg-gradient-to-br from-[#F8A000] dark:from-[#F0BE47] to-[#FFC500] dark:to-[#FFE182] text-[#f1eaea]  dark:text-[#001b1d]">
                   <motion.span className="block p-2 transition-all duration-75 ease-in bg-[#FFE182] bg-opacity-0 rounded-full group-hover:bg-opacity-40">
@@ -86,7 +86,7 @@ const SingleProject = ({
                 >
                   {" "}
                   <motion.button>
-                    <motion.span> Preview</motion.span>
+                    <motion.span>Preview</motion.span>
                   </motion.button>
                 </a>
               </div>

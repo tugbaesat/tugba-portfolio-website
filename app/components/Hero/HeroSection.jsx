@@ -66,7 +66,7 @@ const HeroSection = () => {
             variants={textVariants}
             className="mt-0 mb-4 text-4xl font-extrabold text-transparent uppercase sm:text-5xl lg:text-9xl bg-clip-text bg-gradient-to-r from-brand-primary to-brand-secondary"
           >
-            Hello, it&apos;s Tess!
+            Hello, it&apos;s Tugba!
           </motion.h1>
           <motion.p variants={textVariants} className="mb-6">
             <span className="text-center text-transparent uppercase bg-clip-text bg-gradient-to-r from-brand-primary to-brand-secondary sm:text-lg lg:text-5xl">

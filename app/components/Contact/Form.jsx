@@ -77,7 +77,7 @@ const Form = () => {
           id="message"
           rows={4}
           className=" border border-gray-400   text-xs rounded-lg block w-full p-2.5 bg-transparent"
-          placeholder={`Hi, Tess!
+          placeholder={`Hi, Tugba!
 Let's talk about...`}
         />
       </div>
